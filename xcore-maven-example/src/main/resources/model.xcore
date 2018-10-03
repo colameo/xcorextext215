@@ -1,0 +1,14 @@
+@GenModel(
+    bundleManifest="false",
+    modelDirectory="xcore-maven-example/src/main/java-gen",
+    complianceLevel="8.0"
+)
+package sample.model
+
+class User {
+    String name
+
+    op String sayHello(User user) {
+        "Hello " + user.name
+    }
+}

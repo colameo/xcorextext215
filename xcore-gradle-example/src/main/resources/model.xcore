@@ -1,0 +1,15 @@
+@GenModel(
+    bundleManifest="false",
+    modelDirectory="xcore-gradle-example/src/main/java-gen",
+    complianceLevel="7.0"
+)
+package sample.model
+
+class User {
+    String name
+
+    op String sayHello(User user) {
+        "Hellso " + user.name
+    }
+
+}
